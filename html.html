@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h2, h3 {
+            color: #2c3e50;
+        }
+        .demo-box {
+            background: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 5px solid #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table th {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        form button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #f39c12;
+        }
+        a.back {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        a.back:hover { background: #f39c12; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 30px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Demonstration</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="fullstack.html">Full Stack</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="bootstrap.html">Bootstrap</a>
+    <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="container">
+    <a class="back" href="index.html">← Back to Home</a>
+
+    <h2>What is HTML?</h2>
+    <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It uses <strong>elements</strong> represented by <strong>tags</strong> to structure content on the web.</p>
+
+    <h3>Why Semantic HTML Matters</h3>
+    <p>Semantic HTML uses meaningful tags that describe the content they contain. This improves <strong>accessibility</strong>, <strong>SEO</strong>, and <strong>maintainability</strong> of web pages.</p>
+
+    <!-- DEMO 1: Semantic Structure -->
+    <div class="demo-box">
+        <h3>Demo 1 — Semantic Structure</h3>
+        <p>This page uses semantic elements including:</p>
+        <ul>
+            <li><code>&lt;header&gt;</code> — defines the page header</li>
+            <li><code>&lt;nav&gt;</code> — defines the navigation links</li>
+            <li><code>&lt;main&gt;</code> — defines the main content area</li>
+            <li><code>&lt;footer&gt;</code> — defines the page footer</li>
+            <li><code>&lt;article&gt;</code> — defines independent content</li>
+            <li><code>&lt;section&gt;</code> — defines a section of content</li>
+        </ul>
+        <p>Using these tags instead of generic <code>&lt;div&gt;</code> tags makes the page more meaningful to browsers and screen readers.</p>
+    </div>
+
+    <!-- DEMO 2: Lists -->
+    <div class="demo-box">
+        <h3>Demo 2 — Lists</h3>
+        <p><strong>Unordered List</strong> — used for items without a specific order:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <p><strong>Ordered List</strong> — used for items with a specific order:</p>
+        <ol>
+            <li>Write HTML structure</li>
+            <li>Style with CSS</li>
+            <li>Add interactivity with JavaScript</li>
+        </ol>
+    </div>
+
+    <!-- DEMO 3: Table -->
+    <div class="demo-box">
+        <h3>Demo 3 — Table</h3>
+        <p>Tables are used to display structured data:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Type</th>
+                    <th>Used For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Markup</td>
+                    <td>Structure</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Stylesheet</td>
+                    <td>Styling</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Programming</td>
+                    <td>Interactivity</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- DEMO 4: Form -->
+    <div class="demo-box">
+        <h3>Demo 4 — HTML Form</h3>
+        <p>Forms are used to collect user input. This form demonstrates various input types:</p>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="fullstack">Full Stack Development</option>
+                <option value="frontend">Front-End Development</option>
+                <option value="backend">Back-End Development</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- DEMO 5: Media -->
+    <div class="demo-box">
+        <h3>Demo 5 — Media Elements</h3>
+        <p>HTML supports embedding media using the <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, and <code>&lt;video&gt;</code> tags. The <code>alt</code> attribute on images is important for accessibility — it describes the image to screen readers.</p>
+        <img src="https://via.placeholder.com/400x200?text=HTML+Image+Demo" alt="A placeholder image demonstrating the HTML img tag" style="width:100%; border-radius:5px; margin-top:10px;">
+    </div>
+
+</div>
+
+<footer>
+    <p>CET138 Full Stack Development | University of Sunderland</p>
+</footer>
+
+</body>
+</html>
