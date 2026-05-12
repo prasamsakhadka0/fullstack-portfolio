@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Full Stack Development?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h2, h3 {
+            color: #2c3e50;
+        }
+        .layer {
+            background: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 5px solid #2c3e50;
+        }
+        .layer.frontend { border-left-color: #3498db; }
+        .layer.backend { border-left-color: #2ecc71; }
+        .layer.database { border-left-color: #e74c3c; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 30px;
+        }
+        a.back {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        a.back:hover { background: #f39c12; }
+        .stack-diagram {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 8px;
+        }
+        .stack-diagram div {
+            padding: 15px;
+            margin: 5px auto;
+            max-width: 400px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .fe { background-color: #3498db; }
+        .be { background-color: #2ecc71; }
+        .db { background-color: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What is Full Stack Development?</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="fullstack.html">Full Stack</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="bootstrap.html">Bootstrap</a>
+    <a href="javascript.html">JavaScript</a>
+</nav>
+
+<div class="container">
+    <a class="back" href="index.html">← Back to Home</a>
+
+    <h2>What is Full Stack Development?</h2>
+    <p>Full stack development refers to the development of both the <strong>front-end</strong> (client side) and <strong>back-end</strong> (server side) of a web application, including the <strong>database</strong>. A full stack developer is someone who can work across all these layers.</p>
+
+    <h3>The Three Layers</h3>
+
+    <div class="layer frontend">
+        <h3>1. Front-End (Client Side)</h3>
+        <p>This is what the user sees and interacts with in the browser. Technologies used include <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Frameworks like React, Vue, and Angular are also commonly used.</p>
+    </div>
+
+    <div class="layer backend">
+        <h3>2. Back-End (Server Side)</h3>
+        <p>This is the logic that runs on the server. It processes requests from the front-end and sends back responses. Technologies include <strong>Node.js</strong>, <strong>PHP</strong>, <strong>Python</strong>, and <strong>Java</strong>.</p>
+    </div>
+
+    <div class="layer database">
+        <h3>3. Database</h3>
+        <p>This is where data is stored and retrieved. Common databases include <strong>MySQL</strong>, <strong>PostgreSQL</strong>, and <strong>MongoDB</strong>.</p>
+    </div>
+
+    <h3>How the Layers Interact</h3>
+    <p>When a user visits a website, here is what happens:</p>
+    <ol>
+        <li>The user types a URL in the browser (Front-End)</li>
+        <li>The browser sends an <strong>HTTP request</strong> to the server</li>
+        <li>The server (Back-End) processes the request</li>
+        <li>The server queries the <strong>Database</strong> if needed</li>
+        <li>The server sends back an <strong>HTTP response</strong></li>
+        <li>The browser displays the result to the user</li>
+    </ol>
+
+    <h3>Full Stack Architecture Diagram</h3>
+    <div class="stack-diagram">
+        <div class="fe">Front-End (HTML, CSS, JavaScript)</div>
+        <div>⬆️ HTTP Request / Response ⬇️</div>
+        <div class="be">Back-End (Server - Node.js / PHP)</div>
+        <div>⬆️ Query / Result ⬇️</div>
+        <div class="db">Database (MySQL / MongoDB)</div>
+    </div>
+
+    <h3>Popular Full Stack Technology Stacks</h3>
+    <ul>
+        <li><strong>MERN Stack</strong> — MongoDB, Express, React, Node.js</li>
+        <li><strong>LAMP Stack</strong> — Linux, Apache, MySQL, PHP</li>
+        <li><strong>MEAN Stack</strong> — MongoDB, Express, Angular, Node.js</li>
+    </ul>
+
+    <h3>Role of a Full Stack Developer</h3>
+    <p>A full stack developer can work on any part of a web application. They are valuable in small teams where one person needs to handle everything, and they understand how all parts of an application connect together.</p>
+
+</div>
+
+<footer>
+    <p>CET138 Full Stack Development | University of Sunderland</p>
+</footer>
+
+</body>
+</html>
